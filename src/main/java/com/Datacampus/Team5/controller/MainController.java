@@ -35,7 +35,7 @@ public class MainController {
         responseService.insertdata(responseEntity);
         HashMap<String, String> result = new HashMap<String, String>();
         try {
-            String[] command = new String[] {"python.exe", "C:\\Project\\total_mai3.py"};
+            String[] command = new String[] {"python3", "/home/ec2-user/mldata/total_mai3.py"};
             ProcessBuilder processBuilder = new ProcessBuilder(command);
             Process process = processBuilder.start();
             int exitCode = process.waitFor();
